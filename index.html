@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <title>VIEW티켓</title>
+        <link rel="shortcut icon" href="images/common/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/common/favicon_ios.png">
+        <link rel="icon" sizes="192x192" href="images/common/favicon_android.png">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/colorbox.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.colorbox-min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="popup">
+            <div class="popup_wrapper">
+                <div class="contents">
+                    <div class="notice">
+                        <h2>Notice</h2>    
+                        <p>
+                            본 사이트는 상업적 목적이 아닌<br>
+                            <span class="highlight">개인 포트폴리오 용도</span>로 만들어 졌습니다.<br>
+                            홈페이지의 일부 내용과 이미지 등은 <br>
+                            <span class="highlight">그 출처가 따로 있음을 밝힙니다.<br></span>
+                            본 사이트는 <span class="highlight">HTML5</span>와 <span class="highlight">CSS3</span>를 기준으로 하여<br>
+                            크롬, 사파리, 오페라, 파이어폭스<br>
+                            IE11이상의 브라우저에 맞춘 홈페이지입니다.
+                        </p>    
+                    </div>
+                    <div class="mobile">
+                        <h2>Mobile</h2>    
+                        <div class="qr">
+                            <div class="qr_box">
+                                <img src="images/main/popup_qr.jpg" alt="큐알아이콘">    
+                            </div>
+                            <p>
+                                왼쪽 QR코드를 스캔해주세요<br>
+                                <span class="highlight">VIEW티켓</span> 모바일 페이지로 이동합니다.
+                            </p>
+                        </div>   
+                    </div>
+                </div>
+                <form action="#">
+                    <label for="chk">하루동안 보지 않기</label>
+                    <input type="checkbox" id="chk">
+                </form>
+                <a href="#close_popup" title="팝업 닫기"></a>
+            </div>
+        </div>
+        <header>
+            <div class="h_top">
+                <div class="wrap">
+                    <ul>
+                        <li><a href="top_nav/login.html" class="login_open">로그인</a></li>
+                        <li><a href="top_nav/join.html">회원가입</a></li>
+                        <li><a href="top_nav/cscenter.html">고객센터</a></li>
+                        <li class="last"><a href="top_nav/site_map.html" class="site_map">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_middle">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/common/header_logo.png" alt="view티켓 로고">
+                    </a>
+                </h1>
+                <div class="search_box">
+                    <form action="#">
+                        <input type="text" id="search">
+                        <label for="search">검색입력상자</label>
+                        <button type="submit">검색버튼</button>
+                    </form>
+                </div>
+                <div class="h_icon_banner">
+                    <ul>
+                        <li class="first">
+                            <a href="top_nav/mypage.html" class="my_page" title="나의티켓 보기"></a>
+                            <p>MY티켓</p>
+                        </li>
+                        <li>
+                            <a href="#empty" class="language" title="언어선택"></a>
+                            <p>ENG</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_bottom">
+                <div class="gnb">
+                    <ul>
+                        <li>
+                            <a href="performance/concert.html" class="first main_nav" title="공연 하위메뉴 보기">공연</a>
+                            <ul class="sub_nav">
+                                <li><a href="performance/concert.html">콘서트</a></li>
+                                <li><a href="performance/play.html">연극</a></li>
+                                <li><a href="performance/musical.html">뮤지컬</a></li>
+                                <li class="last"><a href="performance/classic.html">클래식/무용</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="exhibition/exhibition.html" class="main_nav" title="전시/행사 하위메뉴 보기">전시/행사</a>
+                            <ul class="sub_nav">
+                                <li><a href="exhibition/exhibition.html">전시</a></li>
+                                <li class="last"><a href="exhibition/experience.html">체험행사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="kids/kids_musical.html" class="main_nav" title="아동 하위메뉴 보기">아동</a>
+                            <ul class="sub_nav">
+                                <li><a href="kids/kids_musical.html">뮤지컬</a></li>
+                                <li><a href="kids/kids_play.html">연극</a></li>
+                                <li><a href="kids/kids_classic.html">클래식/무용</a></li>
+                                <li class="last"><a href="kids/kids_exhibition.html">전시/행사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sport/soccer.html" class="main_nav" title="스포츠 하위메뉴 보기">스포츠</a>
+                            <ul class="sub_nav">
+                                <li><a href="sport/soccer.html">축구</a></li>
+                                <li><a href="sport/baseball.html">야구</a></li>
+                                <li class="last"><a href="sport/basketball.html">농구</a></li>
+                            </ul>
+                        </li>
+                        <li class="left">
+                            <a href="story/org_story.html" class="main_nav" title="공연이야기 하위메뉴 보기">공연이야기</a>
+                            <ul class="sub_nav">
+                                <li><a href="story/org_story.html">공연단체 이야기</a></li>
+                                <li class="last"><a href="story/support.html">제작 지원 사업</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="board/notice.html" class="last main_nav" title="게시판 하위메뉴 보기">BOARD</a>
+                            <ul class="sub_nav">
+                                <li><a href="board/notice.html">공지사항</a></li>
+                                <li><a href="board/event.html">이벤트</a></li>
+                                <li class="last"><a href="board/community.html">커뮤니티</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ranking/ranking.html" class="ranking" title="공연 순위 보기">RANKING</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="main_slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide white">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_01.jpg" alt="메인이미지01">
+                            <div class="text_box">
+                                <p class="sub_title">단 하루만 열리는 Arcane Salon</p>
+                                <h4>
+                                    DAY6(Even of day)<br>
+                                    &lt;The Arcane Salon&gt;
+                                </h4>
+                                <p class="show_info">2021.01.24 NAVER V LIVE</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide second">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_02.jpg" alt="메인이미지02">
+                            <div class="text_box">
+                                <p class="sub_title">
+                                    잎새에 적은 노래,<br>
+                                    당신의 마음을 녹일 한 편의 시
+                                </p>
+                                <h4>자우림 단독콘서트</h4>
+                                <p class="show_info">2021.01.29~2021.01.31 올림픽공원 올림픽홀</p>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="swiper-slide white">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_03.jpg" alt="메인이미지03">
+                            <div class="text_box">
+                                <p class="sub_title">
+                                    “아무도 이 사실을 몰라야한단다..”<br>
+                                    심리추리스릴러 뮤지컬
+                                </p>
+                                <h4>
+                                    뮤지컬<br>
+                                    블랙메리포핀스
+                                </h4>
+                                <p class="show_info">2020.10.27~2020.12.31 대학로 TOM 1관</p>
+                            </div>
+                        </a>     
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_04.jpg" alt="메인이미지04">
+                            <div class="text_box">
+                                <p class="sub_title">
+                                    ‘웃음’과 ‘감동’이 한자리에!<br>
+                                    세대공감 힐링연극
+                                </p>
+                                <h4>
+                                    연극<br>
+                                    앙리 할아버지와 나
+                                </h4>
+                                <p class="show_info">2020.12.3~2021.02.14 예스24 스테이지 1관</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_05.jpg" alt="메인이미지05">
+                            <div class="text_box">
+                                <p class="sub_title">당신의 크리스마스를 탱고로 물들일 공연</p>
+                                <h4>
+                                    클래식<br>
+                                    크리스마스 지브리 탱고
+                                </h4>
+                                <p class="show_info">2020.12.25 예술의 전당 콘서트홀</p>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="performance/concert.html">
+                            <img src="images/main/main_slider_bn_06.jpg" alt="메인이미지06">
+                            <div class="text_box">
+                                <p class="sub_title">무민과 함께하는 특별한 겨울</p>
+                                <h4>
+                                    전시<br>
+                                    무민75주년 특별 원화전
+                                </h4>
+                                <p class="show_info">2020.11.13~2021.11.14 성수낙낙 A동 지하1층</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="hover_menu">
+                    <div class="wrap">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>    
+        </div>
+        <div id="coupon_zone">
+            <a href="board/event.html">
+                <img src="images/main/coupon_zone_bg_01.png" alt="COUPON ZONE" class="first">
+                <img src="images/main/coupon_zone_bg_02.png" alt="COUPON ZONE 놓치면 후회할 VIEW티켓의 쿠폰 이벤트 쿠폰존 바로가기" class="second">
+            </a>    
+        </div>
+        <div id="ranking">
+            <h2 class="title">SUPER HOT</h2>
+            <div class="tab_bar">
+                <ul>
+                    <li><a href="#empty">콘서트</a></li>
+                    <li><a href="#empty">연극</a></li>
+                    <li><a href="#empty">뮤지컬</a></li>
+                    <li><a href="#empty">클래식/무용</a></li>
+                    <li><a href="#empty">아동</a></li>
+                </ul>
+            </div>
+            <div class="content_wrap">
+                <div>
+                    <ul>
+                        <li class="first">
+                            <a href="performance/concert.html">
+                                <img src="images/main/ranking_concert_bn_01.jpg" alt="NCT : RESONANCE ＇Global Wave＇포스터">
+                                <h4>Beyond LIVE - NCT : RESONANCE ＇Global Wave＇</h4>
+                                <p>
+                                    NAVER V LIVE(Beyond LIVE)<br>
+                                    2020.12.27
+                                </p>
+                            </a>
+                        </li>
+                        <li class="second">
+                            <a href="performance/concert.html">
+                                <figure>
+                                    <img src="images/main/ranking_concert_bn_02.jpg" alt="에이티즈 팬클럽 2기 모집 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            ATEEZ（에이티즈)<br>
+                                            OFFICIAL FANCLUB<br>
+                                            &lt;ATIN&gt; 2기 모집
+                                        </h4>
+                                        <p>
+                                            회원모집<br>
+                                            2021.01.31
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fourth">
+                            <a href="performance/concert.html">
+                                <figure>
+                                    <img src="images/main/ranking_concert_bn_04.jpg" alt="크리스토퍼 내한공연 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            크리스토퍼 내한공연<br>
+                                            (CHRISTOPHER<br>
+                                            LIVE IN SEOUL<br>
+                                        </h4>
+                                        <p>
+                                            YES24 LIVE HAMLL(구, 악스홀)<br>
+                                            2021.05.07 ~ 2021.05.09<br>
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="third">
+                            <a href="performance/concert.html">
+                                <figure>
+                                    <img src="images/main/ranking_concert_bn_03.jpg" alt="동방신기 온라인 팬미팅 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            Beyond LIVE - 2020 TVXQ!<br>
+                                            ONLINE FANMEETING<br>
+                                            ＂동(冬),방(房),신기<br>
+                                            with Cassiopeia＂
+                                        </h4>
+                                        <p>
+                                            NAVER V LIVE(Beyond LIVE)<br>
+                                            2020.12.26<br>
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="performance/concert.html">
+                                <figure>
+                                    <img src="images/main/ranking_concert_bn_05.jpg" alt="XIA 온라인 콘서트 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            [12/26] 2020 XIA<br>
+                                            Ballad＆Musical<br>
+                                            Online Concert<br>
+                                            with Orchestra
+                                        </h4>
+                                        <p>
+                                            온라인<br>
+                                            2020.12.26
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="first">
+                            <a href="performance/play.html">
+                                <img src="images/main/ranking_play_bn_01.jpg" alt="음악극 [올드위키드송] Old Wicked Songs 포스터">
+                                <h4>음악극 [올드위키드송] Old Wicked Songs</h4>
+                                <p>
+                                    YES24 Stage 3관<br>
+                                    2020.12.08 ~ 2021.02.14
+                                </p>
+                            </a>
+                        </li>
+                        <li class="second">
+                            <a href="performance/play.html">
+                                <figure>
+                                    <img src="images/main/ranking_play_bn_02.jpg" alt="연극 [앙리할아버지와 나] 포스터">
+                                    <figcaption>
+                                        <h4>연극 [앙리할아버지와 나]</h4>
+                                        <p>
+                                            예스24스테이지 1관<br>
+                                            2020.12.03~2021.02.14
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fourth">
+                            <a href="performance/play.html">
+                                <figure>
+                                    <img src="images/main/ranking_play_bn_04.jpg" alt="연극 [고스트] 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            [대전] 허파저격<br>
+                                            초특급 코믹연극 [고스트]
+                                        </h4>
+                                        <p>
+                                            대전 아신극장<br>
+                                            2020.11.05~2021.01.03
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="third">
+                            <a href="performance/play.html">
+                                <figure>
+                                    <img src="images/main/ranking_play_bn_03.jpg" alt="라스낭독극장 Part.3 [한성의 이발사] 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            라스낭독극장<br>
+                                            Part.3 [한성의 이발사]
+                                        </h4>
+                                        <p>
+                                            화동일번지<br>
+                                            2021.01.14~2021.01.17
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="performance/play.html">
+                                <figure>
+                                    <img src="images/main/ranking_play_bn_05.jpg" alt="연극 [한뼘사이] 포스터">
+                                    <figcaption>
+                                        <h4>연극 [한뼘사이]</h4>
+                                        <p>
+                                            대학로 서연아트홀<br>
+                                            2018.06.01~2021.01.31
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="first">
+                            <a href="performance/musical.html">
+                                <img src="images/main/ranking_musical_bn_01.jpg" alt="뮤지컬 [노트르담 드 파리] 프렌치 오리지널 내한 in 대구 포스터">
+                                <h4>뮤지컬 [노트르담 드 파리] 프렌치 오리지널 내한 in 대구</h4>
+                                <p>
+                                    대구 계명아트센터<br>
+                                    2021.01.21~2021.01.24
+                                </p>
+                            </a>
+                        </li>
+                        <li class="second">
+                            <a href="performance/musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_musical_bn_02.jpg" alt="뮤지컬 ＜캣츠＞ 40주년 내한공연 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            뮤지컬 ＜캣츠＞<br>
+                                            40주년 내한공연 앙코르－서울<br>
+                                            (Musical CATS Encore)    
+                                        </h4>
+                                        <p>
+                                            세종문화회관 대극장<br>
+                                            2021.01.22~2021.02.26
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fourth">
+                            <a href="performance/musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_musical_bn_04.jpg" alt="[전주] 뮤지컬 헬로카봇 시즌5 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            [전주] 뮤지컬 헬로카봇 시즌5<br>
+                                            [별똥별을 지켜라!]
+                                        </h4>
+                                        <p>
+                                            한국소리문화의전당 모악당<br>
+                                            2021.02.20~2021.02.21
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="third">
+                            <a href="performance/musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_musical_bn_03.jpg" alt="뮤지컬 <스웨그에이지 : 외쳐, 조선!> 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            뮤지컬<br>
+                                            &lt;스웨그에이지 : 외쳐, 조선!&gt;
+                                        </h4>
+                                        <p>
+                                            예술의전당 CJ 토월극장<br>
+                                            2021.01.05~2021.02.28
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="performance/musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_musical_bn_05.jpg" alt="[과천] 호두까기인형 포스터">
+                                    <figcaption>
+                                        <h4>[과천] 호두까기인형</h4>
+                                        <p>
+                                            국립과천과학관 어울림홀<br>
+                                            2020.11.28~2020.12.27
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="first">
+                            <a href="performance/classic.html">
+                                <img src="images/main/ranking_classic_bn_01.jpg" alt="리사이틀 시리즈Ⅰ〈피아니스트 선우예권〉포스터">
+                                <h4>리사이틀 시리즈Ⅰ&lt;피아니스트 선우예권&gt;</h4>
+                                <p>
+                                    대전예술의전당 아트홀<br>
+                                    2021.01.15
+                                </p>
+                            </a>
+                        </li>
+                        <li class="second">
+                            <a href="performance/classic.html">
+                                <figure>
+                                    <img src="images/main/ranking_classic_bn_02.jpg" alt="토요 신진 아티스트 시리즈 <허정인 첼로 독주회> 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            토요 신진 아티스트 시리즈<br>
+                                            &lt;허정인 첼로 독주회&gt;  
+                                        </h4>
+                                        <p>
+                                            롯데콘서트홀<br>
+                                            2021.02.20
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fourth">
+                            <a href="performance/classic.html">
+                                <figure>
+                                    <img src="images/main/ranking_classic_bn_04.jpg" alt="바로크 콘체르토 서울 송년음악회 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            바로크 콘체르토 서울<br>
+                                            송년음악회
+                                        </h4>
+                                        <p>
+                                            예술의전당 IBK 챔버홀<br>
+                                            2020.12.27
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="third">
+                            <a href="performance/classic.html">
+                                <figure>
+                                    <img src="images/main/ranking_classic_bn_03.jpg" alt="크리스마스 지브리 탱고 포스터">
+                                    <figcaption>
+                                        <h4>크리스마스 지브리 탱고</h4>
+                                        <p>
+                                            예술의전당 콘서트홀<br>
+                                            2020.12.25
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="performance/classic.html">
+                                <figure>
+                                    <img src="images/main/ranking_classic_bn_05.jpg" alt="2020 PLUS Chamber Group 송년음악회 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            2020 PLUS Chamber Group<br>
+                                            송년음악회
+                                        </h4>
+                                        <p>
+                                            예술의전당 IBK 챔버홀<br>
+                                            2020.12.31
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="first">
+                            <a href="kids/kids_play.html">
+                                <img src="images/main/ranking_kids_bn_01.jpg" alt="가족음악극 <한여름 밤의 꿈> 포스터">
+                                <h4>가족음악극 &lt;한여름 밤의 꿈&gt;</h4>
+                                <p>
+                                    세종문화회관 M씨어터<br>
+                                    2021.01.08~2021.01.31
+                                </p>
+                            </a>
+                        </li>
+                        <li class="second">
+                            <a href="kids/kids_musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_kids_bn_02.jpg" alt="[대구] 겨울방학특별 가족뮤지컬 [백설공주] 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            [대구] 겨울방학특별 가족뮤지컬<br>
+                                            [백설공주]
+                                        </h4>
+                                        <p>
+                                            대백프라임홀(대백프라자 10층)<br>
+                                            2020.12.29~2021.01.17
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fourth">
+                            <a href="kids/kids_musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_kids_bn_04.jpg" alt="성냥팔이소녀와 캐롤송 포스터">
+                                    <figcaption>
+                                        <h4>성냥팔이소녀와 캐롤송</h4>
+                                        <p>
+                                            대학로 서연아트홀<br>
+                                            2020.12.05~2020.12.27
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="third">
+                            <a href="kids/kids_musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_musical_bn_04.jpg" alt="[전주] 뮤지컬 헬로카봇 시즌5 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            [전주] 뮤지컬 헬로카봇 시즌5<br>
+                                            [별똥별을 지켜라!]
+                                        </h4>
+                                        <p>
+                                            한국소리문화의전당 모악당<br>
+                                            2021.02.20~2021.02.21
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="kids/kids_musical.html">
+                                <figure>
+                                    <img src="images/main/ranking_kids_bn_05.jpg" alt="인피니티 플라잉(INFINITY FLYING) 포스터">
+                                    <figcaption>
+                                        <h4>
+                                            인피니티 플라잉<br>
+                                            (INFINITY FLYING)
+                                        </h4>
+                                        <p>
+                                            국립중앙박물관 내 극장용<br>
+                                            2021.01.20~2021.02.28
+                                        </p>
+                                    </figcaption>    
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="ranking/ranking.html" class="more_btn">더보기+</a>
+        </div>
+        <div id="coming_soon">
+            <h2 class="title">COMING SOON</h2>
+            <div class="content_wrap">
+                <ul>
+                    <li>
+                        <a href="board/notice.html">
+                            <figure>
+                                <img src="images/main/coming_soon_bn_01.jpg" alt="연극<인디아블로그> 이미지">
+                                <figcaption>
+                                    <div class="box01">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="90" />
+                                        </svg>
+                                        <span class="text">TODAY</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <h4>인디아 블로그</h4>
+                            <p>
+                                <span class="bold">티켓오픈<br></span>
+                                2020.12.29
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="board/notice.html">
+                            <figure>
+                                <img src="images/main/coming_soon_bn_02.jpg" alt="뮤지컬<스모크> 이미지">
+                                <figcaption>
+                                    <div class="box02">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="90" />
+                                        </svg>
+                                        <span class="text">D - 1</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <h4>스모크</h4>
+                            <p>
+                                <span class="bold">티켓오픈<br></span>
+                                2020.12.30
+                            </p>
+                        </a>
+                    </li>
+                    <li class="last">
+                        <a href="board/notice.html">
+                            <figure>
+                                <img src="images/main/coming_soon_bn_03.jpg" alt="뮤지컬<미오 프라텔로> 이미지">
+                                <figcaption>
+                                    <div class="box03">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="90" />
+                                        </svg>
+                                        <span class="text">D - 6</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <h4>미오 프라텔로</h4>
+                            <p>
+                                <span class="bold">티켓오픈<br></span>
+                                2021.01.04
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="board/notice.html" class="more_btn">더보기+</a>
+        </div>
+        <div id="img_bn">
+            <div class="i_bottom">
+                <img src="images/main/image_bn_bg.png" alt="문화의날 이미지 배너">
+            </div>
+        </div>
+        <div id="recommend">
+            <h2 class="title">TODAY'S PICK</h2>
+            <ul class="contents">
+                <li>
+                    <figure>
+                        <img src="images/main/recommend_bn_01.jpg" alt="연극<시간을 파는 상점> 이미지">
+                        <figcaption>
+                            <h4>연극&lt;시간을 파는 상점&gt;</h4>
+                            <p>
+                                파랑시어터<br>
+                                2017.10.01 ~ 2021.01.31
+                            </p>
+                            <a href="performance/play.html" class="more_btn">더보기+</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/main/recommend_bn_02.jpg" alt="뮤지컬<호프> 이미지">
+                        <figcaption>
+                            <h4>뮤지컬&lt;호프&gt;</h4>
+                            <p>
+                                두산아트센터 연강홀<br>
+                                2020.11.19 ~ 2021.02.21
+                            </p>
+                            <a href="performance/musical.html" class="more_btn">더보기+</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/main/recommend_bn_03.jpg" alt="연극<시간을 파는 상점> 이미지">
+                        <figcaption>
+                            <h4>리사이틀 시리즈 Ⅰ&lt;피아니스트 선우예권&gt;</h4>
+                            <p>
+                                대전예술의전당 아트홀<br>
+                                2021.01.15 ~ 2021.01.15
+                            </p>
+                            <a href="performance/classic.html" class="more_btn">더보기+</a>
+                        </figcaption>
+                    </figure>
+                </li>    
+            </ul>
+        </div>
+        <div id="video_bn">
+            <div class="wrap">
+                <div class="video_container">
+                    <iframe width="612" height="350" title="컴백스테이지 캠페인 동영상" src="https://www.youtube.com/embed/C761c9E9ztc?wmode=transparent" allowfullscreen></iframe>
+                </div>
+                <div class="video_sumnail">
+                    <img src="images/main/video_bn.jpg" alt="컴백스테이지 캠페인 이미지">
+                    <button>재생</button>
+                </div>
+                <div class="video_txt">
+                    <p>
+                        공연이 사랑하는 소중한 일상이<br>
+                        돌아오길 바라는 마음으로<br>
+                        오늘도 최선을 다합니다
+                    </p>
+                    <h4>#컴백스테이지 캠페인</h4>
+                </div>
+            </div>
+        </div>
+        <div id="concert_classic">
+            <h2 class="title">CONTERT&amp;CLASSIC</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/concert_classic_bn_01.jpg" alt="크리스토퍼 내한공연">
+                            <figcaption>
+                                <h4>크리스토퍼 내한공연</h4>
+                                <p>
+                                    덴마크 팝 프린스<br>
+                                    크리스토퍼 내한공연<br>
+                                    VIEW티켓 단독판매!<br>
+                                    YES24 LIVE HALL(구, 악스홀)<br>
+                                    2021.05.07~2021.05.09
+                                </p>
+                                <a href="performance/concert.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/concert_classic_bn_02.jpg" alt="NCT:RESONANCE ‘Global Wave’ 포스터">
+                            <figcaption>
+                                <h4>
+                                    NCT:RESONANCE<br>
+                                    ‘Global Wave’
+                                </h4>
+                                <p>
+                                    데뷔부터 현재까지 NCT무대를<br>
+                                    총망라하는 스페셜 공연!<br>
+                                    NAVER V LIVE<br>
+                                    2020.12.27
+                                </p>
+                                <a href="performance/concert.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/concert_classic_bn_03.jpg" alt="청춘아레나 2020 포스터">
+                            <figcaption>
+                                <h4>청춘아레나 2020</h4>
+                                <p>
+                                    안방 1열에서 즐기는<br>
+                                    10명의 아티스트와 함께하는 공연<br> 
+                                    마이크임팩트 라이브<br>
+                                    2021.01.31
+                                </p>
+                                <a href="performance/concert.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/concert_classic_bn_04.jpg" alt="2020 롯데콘서트홀 송년음악회 포스터">
+                            <figcaption>
+                                <h4>
+                                    2020 롯데콘서트홀<br>
+                                    송년음악회
+                                </h4>
+                                <p>
+                                    다사다난했던 2020년,<br>
+                                    한해를 마무리하는 감동의 순간!<br>
+                                    롯데콘서트홀<br>
+                                    2020.12.30 ~ 2020.12.31
+                                </p>
+                                <a href="performance/classic.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/concert_classic_bn_05.jpg" alt="정경화 & 김선욱 듀오 리사이틀 - 성남 포스터">
+                            <figcaption>
+                                <h4>
+                                    정경화 &amp; 김선욱<br>
+                                    듀오 리사이틀 - 성남
+                                </h4>
+                                <p>
+                                    피아니스트 김선욱과 바이올리니스트<br>
+                                    정경화가 브람스 바이올린 소나타<br>
+                                    전곡으로 선보이는 첫 듀오 무대<br>
+                                    성남아트센터 콘서트홀<br>
+                                    2020.12.20
+                                </p>
+                                <a href="performance/classic.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="musical_play">
+            <h2 class="title">MUSICAL&amp;PLAY</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/musical_play_bn_01.jpg" alt="뮤지컬<호프> 포스터">
+                            <figcaption>
+                                <h4>뮤지컬 &lt;호프&gt;</h4>
+                                <p>
+                                    가슴 속 꿈과 열정이 타버린<br>
+                                    그 자리에 피어난 연기..<br>
+                                    이상의 시 뮤지컬로 탄생하다!<br>
+                                    YES24 Stage 2관<br>
+                                    2020.12.04  ~ 2021.02.21
+                                </p>
+                                <a href="performance/musical.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/musical_play_bn_02.jpg" alt="뮤지컬<캣츠> 포스터">
+                            <figcaption>
+                                <h4>뮤지컬 &lt;캣츠&gt;</h4>
+                                <p>
+                                    전 세계가 사랑한 영원한 명작<br>
+                                    &lt;캣츠&gt; 단 5주간의 앙코드!<br>
+                                    세종문화회관 대극장<br>
+                                    2021.01.22~2021.02.26<br>
+                                </p>
+                                <a href="performance/musical.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/musical_play_bn_03.jpg" alt="음악극<올드위키드송> 포스터">
+                            <figcaption>
+                                <h4>음악극 &lt;올드위키드송&gt;</h4>
+                                <p>
+                                    “마음을 열고 서로를 듣는 거야”<br>
+                                    슬픔과 환의의 하모니<br>
+                                    YES24 Stage 3관<br>
+                                    2020.12.08 ~ 2021.02.14
+                                </p>
+                                <a href="performance/play.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/musical_play_bn_04.jpg" alt="연극<2호선 세입자> 포스터">
+                            <figcaption>
+                                <h4>연극 &lt;2호선 세입자&gt;</h4>
+                                <p>
+                                    2호선에 사람이 산다?<br>
+                                    요절복통 대환장 코미디<br>
+                                    대학로 바탕골소극장<br>
+                                    2019.03.15 ~ OPEN RUN
+                                </p>
+                                <a href="performance/play.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/musical_play_bn_05.jpg" alt="연극<옥탑방고양이> 포스터">
+                            <figcaption>
+                                <h4>연극 &lt;옥탑방고양이&gt;</h4>
+                                <p>
+                                    매분매초 궁금해지는 콩닥콩닥 로맨스<br>
+                                    당신의 취향을 저격할 인생연극<br>
+                                    대학로 틴틴홀<br>
+                                    2018.03.01 ~ 2021.01.31
+                                </p>
+                                <a href="performance/play.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="exhibition_kids">
+            <h2 class="title">EXHIBITION&amp;KIDS</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/exhibition_kids_bn_01.jpg" alt="데이비드 자민展 포스터">
+                            <figcaption>
+                                <h4>데이비드 자민展</h4>
+                                <p>
+                                    내면 세계로의 여행<br>
+                                    데이비드 자민과 함께 떠나는<br>
+                                    “NEW JOURNEY”<br>
+                                    예술의 전당 한가람미술관 2층<br>
+                                    2021.01.05  ~ 2021.01.31
+                                </p>
+                                <a href="exhibition/exhibition.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/exhibition_kids_bn_02.jpg" alt="앙리 마티스 특별展 포스터">
+                            <figcaption>
+                                <h4>앙리 마티스 특별展</h4>
+                                <p>
+                                    앙리 마티스 탄생 150주년<br>
+                                    국내 최초 마티스 단독전 개최<br>
+                                    마이아트뮤지엄<br>
+                                    2020.11.01 ~ 2021.03.03
+                                </p>
+                                <a href="exhibition/exhibition.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/exhibition_kids_bn_03.jpg" alt="인형극<청골이가 달라졌어요 & 토끼와 거북이> 포스터">
+                            <figcaption>
+                                <h4>
+                                인형극<br>
+                                &lt;청골이가 달라졌어요&amp;<br>
+                                토끼와 거북이&gt;</h4>
+                                <p>
+                                    영유아를 위한 인형극!<br>
+                                    우리 아이 첫 공연으로 후회 없는 선택<br>
+                                    대학로 명작 극장<br>
+                                    2020.10.22 ~ 2020.12.31
+                                </p>
+                                <a href="kids/kids_play.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/exhibition_kids_bn_04.jpg" alt="뮤지컬<렛잇고 시즌2> 포스터">
+                            <figcaption>
+                                <h4>뮤지컬 &lt;렛잇고 시즌2&gt;</h4>
+                                <p>
+                                    겨울왕국으로 떠나는 여행<br>
+                                    친구들아 모두 모여라~<br>
+                                    고양어울림누리 별모래극장<br>
+                                    2021.01.30 ~ 2021.01.31
+                                </p>
+                                <a href="kids/kids_musical.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="snip1384">
+                            <img src="images/main/exhibition_kids_bn_05.jpg" alt="뮤지컬<호두까기인형> 포스터">
+                            <figcaption>
+                                <h4>뮤지컬 &lt;호두까기인형&gt;</h4>
+                                <p>
+                                    올 겨울 우리 아이를 위한<br>
+                                    최고의 선택!<br>
+                                    국립과천과학관 어울림홀<br>
+                                    2020.11.28 ~ 2020.12.27
+                                </p>
+                                <a href="kids/kids_musical.html">지금 예매하러 가기 &gt;</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="story">
+            <div class="wrap">
+                <h2>공연이야기</h2>
+                <p>생생한 현장의 이야기 속으로!</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main/story_bn_01.jpg" alt="서초국제예술단 로고">
+                            <div class="text_box">
+                                <h4>서초국제예술단</h4>
+                                <p>서초국제예술단은 2018년 서초문화재단과의 MOU를 계기로 단체를 구성한 이래 공연의 성격과 장르를 확장하여 다양한 방면에서의 음악회와 국·내외 문화교류를 활발히 이어가고 있으며 서초 지역사회 구성원들을 위한 공연을 하고 있습니다.</p>
+                                <a href="story/org_story.html">관련작품 보러 가기 <span class="highlight">→</span></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/story_bn_02.jpg" alt="광대생각 극단 로고">
+                            <div class="text_box">
+                                <h4>광대생각</h4>
+                                <p>광대생각은 우리나라 전통연희를 소재로 하는 창작연희공연 및 교육단체입니다.</p>
+                                <a href="story/org_story.html">관련작품 보러 가기 <span class="highlight">→</span></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/story_bn_03.jpg" alt="극단 모시는사람들 로고">
+                            <div class="text_box">
+                                <h4>모시는 사람들</h4>
+                                <p>극단 모시는사람들은 1989년 &lt;반쪽이전(국립극장)&gt;으로 창단하였습니다. 대표작 뮤지컬 &lt;블루사이공&gt; 연극 &lt;오아시스세탁소 습격사건)&gt; &lt;강아지똥&gt; &lt;이기동체육관&gt;등을 기획제작한 극단입니다</p>
+                                <a href="story/org_story.html">관련작품 보러 가기 <span class="highlight">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div id="review">
+            <h2 class="title">REVIEW</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="board/community.html">
+                            <img src="images/main/review_bn_01.jpg" alt="뮤지컬<유월> 관람 후기 이미지">
+                            <div class="text_box">
+                                <h3>뮤지컬</h3>
+                                <h4>유월!! 제 인생작을 만났어요</h4>
+                                <p>뮤지컬 보는걸 즐겨하는 편인데 요즘 코로나 땜에 공연이 많이 취소돼서 우울했었어요.. 근데 VIEW티켓 딱 들어왔더니 오픈 티켓에 유월이 보이더라구요 홀린듯이 예매했는데 정말 너무 좋아서 행복한 관람 됐습니다.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="board/community.html">
+                            <img src="images/main/review_bn_02.jpg" alt="연극<오아시스세탁소 습격사건> 관람 후기 이미지">
+                            <div class="text_box">
+                                <h3>연극</h3>
+                                <h4>완전 강추!!!!!꼭 보세요</h4>
+                                <p>저는 연극, 영화, 뮤지컬 이런 공연과는 완전 담 쌓고 사는 사람인데 지인이 같이 가자고 해서 관람했는데요 안 봤으면 후회할 뻔 했어요 진짜 너무 재밌고 좋았습니다.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="board/community.html">
+                            <img src="images/main/review_bn_03.jpg" alt="뮤지컬<넌 특별하단다> 관람 후기 이미지">
+                            <div class="text_box">
+                                <h3>뮤지컬·아동</h3>
+                                <h4>저희집 공주님이 좋아하네요</h4>
+                                <p>휴일인데 어디 안놀러가냐고 보채는 딸 데리고 뮤지컬 보러 다녀왔습니다. 딸이 너무 재밌는데 조금 슬펐다고 돌아오는 차 안에서 계속 얘기하는데 어찌나 귀엽던지</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="board/community.html">
+                            <img src="images/main/review_bn_04.jpg" alt="무민 특변전 관람 후기 이미지">
+                            <div class="text_box">
+                                <h3>전시</h3>
+                                <h4>남자친구랑 무민 전시회 관람을 다녀왔습니다.</h4>
+                                <p>남자친구랑 무민 전시회에서 데이트!! 무민 진짜 이 세상 귀여움 아니고ㅠ대박이에요!! 데이트하기에도 너무 좋고 남자친구가 인생샷 완전 많이 찍어줘서 너무 행복했어요</p>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <a href="board/community.html" class="more_btn">더보기+</a>
+        </div>
+        <div id="info">
+            <div class="wrap">
+                <div class="cs_center">
+                    <p>1544-0000</p>
+                    <dl>
+                        <dt class="day">평일</dt>
+                        <dd class="day">09:00 - 18:00</dd>
+                        <dt>주말</dt>
+                        <dd>09:00 - 17:00(일요일/공휴일 휴무)</dd>
+                    </dl>
+                </div>
+                <div class="icon_banner">
+                    <ul>
+                        <li><a href="top_nav/cscenter.html" class="info_bn01">이용안내</a></li>
+                        <li><a href="top_nav/cscenter.html" class="info_bn02">결제방법</a></li>
+                        <li><a href="top_nav/cscenter.html" class="info_bn03">수수료</a></li>
+                        <li><a href="top_nav/cscenter.html" class="info_bn04">취소/환불</a></li>
+                        <li><a href="top_nav/cscenter.html" class="info_bn05">티켓수령</a></li>
+                        <li><a href="top_nav/cscenter.html" class="info_bn06">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="notice">
+            <div class="wrap">
+                <h3>NOTICE</h3>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="board/notice.html">[서비스점검] KB국민카드 시스템 점검에 따른 결제 서비스 중단 안내(12/26)</a></div>
+                        <div class="swiper-slide"><a href="board/notice.html">[변경/취소] 코로나 확산으로 인한 공연 잠정 연기 및 취소 안내</a></div>
+                        <div class="swiper-slide"><a href="board/notice.html">[티켓오픈] 라스낭독극장 Part.3 [한성의 이발사] 티켓오픈 안내</a></div>
+                        <div class="swiper-slide"><a href="board/notice.html">[티켓오픈] SF9 공식팬클럽 FANTASY 3기 팬미팅 [SF9워크숍] 진행 사항 공지입니다.</a></div>
+                        <div class="swiper-slide"><a href="board/notice.html">[티켓오픈] 뮤지컬 &lt;노트르담 드 파리&gt; 프렌치 오리지널 내한 in 대구 티켓...</a></div>
+                    </div>
+                </div>
+                <a href="board/notice.html" title="공지사항 더보기"></a>
+            </div>
+        </div>
+        <footer>
+            <div class="wrap">
+                <div class="f_top">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="top_nav/cscenter.html" class="last">이용안내</a></li>
+                    </ul>
+                </div>
+                <div class="f_bottom">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/common/footer_logo.png" alt="VIEW티켓 로고">
+                        </a>
+                    </h1>
+                    <p>
+                        광주광역시 서구 00동 00번지 | 대표 : 김00<br>
+                        개인정보관리책임자 : 고객센터 한00 | E-mail : kbcj0000@naver.com<br>
+                        COPYRIGHT&copy; 2020 VIEW티켓 All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="mobile_btn">
+            <a href="http://mviewticket.dothome.co.kr/">모바일 버전</a>
+        </div>
+        <aside class="top_btn">
+            <a href="#empty">
+                ▲<br>
+                TOP
+            </a>
+        </aside>
+    </body>
+</html>

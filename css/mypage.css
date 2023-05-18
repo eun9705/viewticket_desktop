@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.mypage .wrap{ margin-bottom: 50px; }
+.mypage .table_wrap{ width: 1180px; margin: 120px auto; text-align: left; } 
+.mypage .table_wrap h3{ height: 50px; font-family: 'S-CoreDream-5Medium', '맑은 고딕', sans-serif; font-size: 18px; font-weight: normal; line-height: 50px; }
+.mypage .table_wrap .sub_description{ margin-left: 20px; color: #999; font-family: 'S-CoreDream-3Light', '맑은 고딕', sans-serif; font-size: 18px; }
+.mypage .table_wrap .reservation, .mypage .table_wrap .point{ width: 100%; text-align: center; }
+.mypage .table_wrap .reservation th, .mypage .table_wrap .point th{ height: 50px; border: 1px solid #ccc; border-top: 3px solid #f19c49; background-color: rgba(241,156,73,0.2); font-weight: normal; }
+.mypage .table_wrap .reservation td, .mypage .table_wrap .point td{ height: 100px; color: #666; border-bottom: 1px solid #ccc; }
+.mypage .table_wrap .point_wrap{ margin-top: 80px; }
+.mypage .table_wrap .sub_info{ height: 40px; text-align: right;line-height: 40px; }

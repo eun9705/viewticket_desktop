@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.login_box{ width: 500px; height: 600px; background-color: #fff; padding: 13px; box-sizing: border-box; }
+.login_wrap{ width: 100%; height: 100%; padding: 35px 67px 30px; box-sizing: border-box; border: 1px solid #333; background-image: url(../images/top_nav/login_bg.jpg); background-repeat: no-repeat; background-size: cover; }
+.login_wrap h2{ position: relative; font-family: 'Ubuntu', '맑은 고딕', sans-serif; font-size: 25px; text-align: center; font-weight: 400; margin-bottom: 25px; }
+.login_wrap h2:after{ position: absolute; left: 0; right: 0; top: 33px; bottom: 0; margin: 0 auto; content: ''; width: 90px; height: 2px; background-color: #f19c49; }
+.login_wrap #login_input, .login_wrap #password_input{ width: 340px; height: 50px; margin: 0 auto 20px; padding-left: 55px; color: #999; font-size: 14px; border: 1px solid #999; box-sizing: border-box; background-repeat: no-repeat; background-position: 15px  center; }
+.login_wrap #login_input{ background-image: url(../images/top_nav/login_id_icon.png); }
+.login_wrap #password_input{ background-image: url(../images/top_nav/login_pw_icon.png); }
+.login_wrap #chk{ width: 15px; height: 15px; border: 1px solid #999; box-sizing: border-box; margin-bottom: 30px; }
+.login_wrap label{ position: relative; top: -2px; color: #666; font-size: 12px; }
+.login_wrap button[type="submit"]{ width: 340px; height: 70px; margin-bottom: 17px; background-color: #f19c49; text-align: center; color: #fff; font-family: 'S-CoreDream-6Bold', '맑은 고딕', sans-serif; font-size: 20px; }
+.login_wrap .find{ margin-bottom: 44px; padding-left: 69px; box-sizing: border-box; }
+.login_wrap .first{ margin-right: 39px; }
+.login_wrap .first:after{ position: relative; left: 22px; content: '|'; }
+.login_wrap p{ margin-bottom: 8px; color: #666; font-size: 12px; }
+.login_wrap .join_btn{ display: block; width: 340px; height: 70px; background-color: #999; text-align: center; color: #fff; font-family: 'S-CoreDream-6Bold', '맑은 고딕', sans-serif; font-size: 20px; line-height: 70px; }

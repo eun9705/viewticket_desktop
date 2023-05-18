@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>로그인::VIEW티켓</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/login.js"></script>
+    </head>
+    <body>
+        <div class="login_box">
+            <div class="login_wrap">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <fieldset>
+                        <legend class="away">로그인</legend>
+                        <input type="text" id="login_input" placeholder="아이디를 입력하세요">
+                        <input type="password" id="password_input" placeholder="비밀번호를 입력하세요"><br>
+                        <input type="checkbox" id="chk">
+                        <label for="chk">아이디 저장</label>
+                    </fieldset>
+                    <button type="submit">로그인</button>
+                    <div class="find">
+                        <a href="#id_find" class="first">아이디 찾기</a>
+                        <a href="#pw_find">비밀번호 찾기</a>
+                    </div>
+                    <p>아직 회원이 아니신가요?</p>
+                    <a href="../top_nav/join.html" class="join_btn" target="_parent">회원가입</a>
+                </form>
+            </div>    
+        </div>
+    </body>
+</html>

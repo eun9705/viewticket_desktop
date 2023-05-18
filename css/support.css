@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#sub_contents .wrap > p{ height: 80px; margin-bottom: 120px; line-height: 40px; }
+.support table{ width: 100%; text-align: left; }
+.support tr{ height: 300px; border-bottom: 1px solid #ccc; }
+.support .first{ border-top: 2px solid #333; }
+.support .last{ border-bottom: 2px solid #333; }
+.support th{ padding-left: 130px; box-sizing: border-box; font-size: 32px; background-repeat: no-repeat; background-size: 80px; background-position: left calc(50% + 10px); }
+.support .th01{ background-image: url(../images/story/support_icon_01.png); }
+.support .th02{ background-image: url(../images/story/support_icon_02.png); }
+.support .th03{ background-image: url(../images/story/support_icon_03.png); }
+.support .th04{ background-image: url(../images/story/support_icon_04.png); }
+.support .th05{ background-image: url(../images/story/support_icon_05.png); }
+.support .step{ color: #f19c49; font-size: 20px; font-weight: normal; }
+.support td{ padding-left: 10px; box-sizing: border-box; font-size: 16px; line-height: 30px; }

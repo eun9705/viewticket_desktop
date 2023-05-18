@@ -1,0 +1,57 @@
+/* 공지사항 목록 */
+.board_table{ position: relative; width: 100%; }
+
+.board_table .page{ float: left; height: 40px; margin-bottom: 35px; line-height: 40px; }
+.board_table .page span{ font-size: 16px; }
+.board_table .page .total{ margin-right: 20px; }
+.board_table .page b{ color: #f19c49; font-size: 16px; }
+
+#board_form{ position: absolute; top: 0; right: 0; }
+#find_select{ width: 90px; height: 40px; border: 1px solid #ccc; box-sizing: border-box; }
+#search_box{ width: 350px; height: 40px; padding-left: 10px; border: 1px solid #ccc; box-sizing: border-box; }
+#search_btn{ width: 60px; height: 40px; border: none; box-sizing: border-box; background-color: #f19c49; color: #fff; }
+
+.board_table table{ width: 100%; margin-bottom: 50px; }
+#sub_contents .board_table th{ height: 50px; background-color: #f5f5f5; border-right: none; border-top: 2px solid #333; box-sizing: border-box; }
+#sub_contents .board_table td{ border-right: none; padding: 20px; border-top: 1px solid #ccc; color: #666; }
+#sub_contents .board_table .last td{ border-bottom: 1px solid #333; }
+#sub_contents .board_table .subject{ text-align: left; }
+#sub_contents .board_table td a{ color: #666; font-size: 16px; }
+#sub_contents .board_table td a:hover{ color: #333; }
+
+.board_table .page_btn{ position: relative; width: 100%; }
+.board_table .page_num{ width: 100%; height: 40px; text-align: center; line-height: 40px; }
+.board_table .page_num > *{ margin: 0 5px; }
+.board_table .page_num > b{ color: #333; }
+
+.board_table .btn_wrap{ position: absolute; top: 0; right: 0; }
+.board_table .btn_wrap a{ display: inline-block; width: 80px; height: 40px; border: 1px solid #f19c49; box-sizing: border-box; text-align: center; line-height: 38px; color: #f19c49; font-weight: 500; }
+.board_table .btn_wrap a.write_btn{ background-color: #f19c49; color: #fff; }
+
+/* 공지사항 글쓰기 */
+#board_write{ width: 100%; overflow: hidden; }
+#board_write table{ width: 100%; margin-bottom: 50px; }
+#board_write th{ width: 15%; border-top: none; background-color: rgba(241,156,73,0.2);  }
+#board_write td{ border-top: none; border-bottom: 1px solid #ccc; box-sizing: border-box; text-align: left; }
+#board_write .last th{ border-bottom: 1px solid #ccc; box-sizing: border-box; }
+#board_write .top th, #board_write .top td{ height: 50px; border-top: 2px solid #f19c49; box-sizing: border-box; }
+#board_write .top td{ padding-left: 15px; box-sizing: border-box; }
+#board_write th label{ font-size: 18px; color: #333; }
+#notice_title{ width: 965px; height: 40px; margin: 15px; padding: 0 10px; border: 1px solid #999; box-sizing: border-box; }
+#notice_content{ width: 965px; margin: 15px; padding: 10px; border: 1px solid #999; box-sizing: border-box; resize: none; }
+#notice_file01, #notice_file02{ width: 200px; margin: 15px; }
+#board_write .btn_wrap{ width: 100%; text-align: center; }
+#board_write .btn_wrap > *{ display: inline-block; width: 80px; height: 40px; border: 1px solid #f19c49; box-sizing: border-box; text-align: center; line-height: 38px; color: #f19c49; font-weight: 500; }
+#board_write .btn_wrap > .submit_btn{ background-color: #f19c49; color: #fff; }
+
+
+/* 공지사항 글보기 */
+.board_view{ width: 100%; margin-bottom: 50px; }
+#sub_contents .board_view th{ width: 15%; height: 50px; border-top: 1px solid #ccc; background-color: #f5f5f5;  }
+#sub_contents .board_view td{ border-top: 1px solid #ccc; text-align: left; padding-left: 15px; box-sizing: border-box; }
+#sub_contents .board_view .top th, #sub_contents .board_view .top td{ border-top: 2px solid #f19c49; }
+#sub_contents .board_view .last th, #sub_contents .board_view .last td{ border-bottom: 1px solid #ccc; box-sizing: border-box; }
+.board_view + .btn_wrap{ width: 100%; text-align: center; }
+.board_view + .btn_wrap > *{ display: inline-block; width: 80px; height: 40px; border: 1px solid #f19c49; box-sizing: border-box; text-align: center; line-height: 38px; color: #f19c49; font-weight: 500; }
+.board_view + .btn_wrap > .modify_btn{ background-color: #f19c49; color: #fff; }
+.board_view + .btn_wrap > .delete_btn{ background-color: #e87722; color: #fff; border: 1px solid #f19c49; }

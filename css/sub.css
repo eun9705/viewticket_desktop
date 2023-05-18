@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* main_img */
+#main_img{ width: 100%; min-width: 1180px; height: 350px; margin-top: 190px; padding-top: 117px; box-sizing: border-box; background-repeat: no-repeat; background-size: cover; background-position: center; }
+.sub_main_bg01{ background-image: url(../images/performance/performance_bg.jpg); }
+.sub_main_bg02{ background-image: url(../images/exhibition/exhibition_bg.jpg); }
+.sub_main_bg03{ background-image: url(../images/kids/kids_bg.jpg); }
+.sub_main_bg04{ background-image: url(../images/sport/sport_bg.jpg); }
+.sub_main_bg05{ background-image: url(../images/story/story_bg.jpg); }
+.sub_main_bg06{ background-image: url(../images/board/board_bg.jpg); }
+.sub_main_bg07{ background-image: url(../images/ranking/ranking_bg.jpg); }
+.join_main_bg{ background-image: url("../images/top_nav/join_bg.jpg"); }
+.cscenter_main_bg{ background-image: url("../images/top_nav/cscenter_bg.jpg"); }
+.mypage_main_bg{ background-image: url("../images/top_nav/mypage_bg.jpg"); }
+#main_img h2{ width: 100%; height: 83px; color: #fff; font-family: 'S-CoreDream-6Bold', '맑은 고딕', sans-serif; font-size: 48px; text-align: center; }
+#main_img p{ width: 100%; height: 30px; color: #fff; font-size: 24px; text-align: center; }
+
+/* sub_menu */
+#sub_menu{ width: 100%; min-width: 1180px; height: 50px; background-color: #f19c49; }
+#sub_menu ul{ width: 1180px; height: 100%; margin: 0 auto; }
+#sub_menu li{ float: left; height: 100%; box-sizing: border-box; border-right: 1px solid #fff; text-align: center; line-height: 50px; }
+#sub_menu li:last-child{ border-right: none; }
+#sub_menu .column01 li{ width: 100%; }
+#sub_menu .column02 li{ width: 50%; }
+#sub_menu .column03 li{ width: 33.33%; }
+#sub_menu .column04 li{ width: 25%; }
+#sub_menu li a{ display: block; width: 100%; height: 100%; color: #fff; font-family: 'S-CoreDream-5Medium', '맑은 고딕', sans-serif; font-size: 18px; }
+#sub_menu li.active{ background-color: #fff; }
+#sub_menu li.active a{ color: #f19c49; }
+
+/* sub_title */
+#sub_title{ position: relative; width: 1180px; margin: 0 auto; padding-top: 67px; }
+#sub_title:after{ content: ''; position: absolute; left: 0; right: 0; top: auto; bottom: -20px; display: block; width: 400px; height: 2px; margin: 0 auto; background-color: #666; }
+#sub_title .indicator{ width: 100%; text-align: left; margin-bottom: 70px; }
+#sub_title h3{ width: 100%; height: 80px; text-align: center; color: #333; font-size: 50px; font-weight: normal; }
+#sub_title .indicator li{ display: inline-block; margin: 0 20px; }
+#sub_title .indicator li.first a{ padding-left: 35px; box-sizing: border-box; background-repeat: no-repeat; background-image: url(../images/sub/home_icon.png); background-position: left center; background-size: 20px; }
+#sub_title .indicator li:after{ position: relative; left: 20px; content: '>'; font-size: 16px; font-weight: 500; }
+#sub_title .indicator li:last-child:after{ content: ''; }
+#sub_title .indicator a{ font-family: 'S-CoreDream-3Light', '맑은 고딕', sans-serif; font-size: 16px; font-weight: normal; }
+
+/* sub_contents */
+#sub_contents{ width: 100%; min-width: 1180px; overflow: hidden; margin: 0 auto; text-align: center; }
+#sub_contents .error_img, #sub_contents .no_img{ margin: 100px 0; padding-top: 250px; box-sizing: border-box; color: #999; font-family: 'S-CoreDream-5Medium', '맑은 고딕', sans-serif; font-size: 20px; background-repeat: no-repeat; background-image: url(../images/sub/error_icon.png); background-position: center; background-size: 190px; }
+#sub_contents .no_img{ background-image: url(../images/sub/no_reservation_icon.png); }
+#sub_contents .wrap{ margin-top: 110px; }
+#sub_contents .wrap > p{ height: 150px; line-height: 150px; font-size: 20px; margin: 30px 0 10px; }
+#sub_contents .wrap .highlight{ color: #f19c49; font-size: 20px; }
+#sub_contents .wrap .sport{ padding: 110px 105px 0; box-sizing: border-box; }
+#sub_contents .wrap .story{ padding-top: 110px; box-sizing: border-box; }
+#sub_contents .wrap .list li, #sub_contents .wrap .sport li, #sub_contents .wrap .story li{ float: left; margin-right: 20px; }
+#sub_contents .wrap .list li, #sub_contents .wrap .story li{ width: 220px; height: 480px; margin-bottom: 35px; }
+#sub_contents .wrap .story li{ height: 280px; padding: 14px; box-sizing: border-box; border: 1px solid #ccc; }
+#sub_contents .wrap .sport li{ width: 310px; height: 480px; margin-bottom: 20px; padding: 24px; box-sizing: border-box; border: 1px solid #ccc; background-color: #f5f5f5; }
+#sub_contents .wrap .list li:nth-child(5n),#sub_contents .wrap .story li:nth-child(5n){ margin-right: 0; }
+#sub_contents .wrap .sport li:nth-child(3n){ margin-right: 0; }
+#sub_contents .wrap img{ width: 100%; transition: 0.3s; }
+#sub_contents .wrap h4{ padding: 25px 0 10px; box-sizing: border-box; font-family: 'S-CoreDream-5Medium', '맑은 고딕', sans-serif; font-size: 16px; font-weight: normal; }
+#sub_contents .wrap .sport h4{ font-size: 20px; }
+#sub_contents .wrap .story h4{ font-size: 14px; }
+#sub_contents .wrap .place, #sub_contents .wrap .date, #sub_contents .wrap .home{ color: #999; font-size: 13px; }
+#sub_contents .wrap .place, #sub_contents .wrap .home{ padding: 0 0 5px; }
+#sub_contents .wrap .eng_name{ height: 35px; color: #999; font-size: 12px; text-transform: uppercase; }
+#sub_contents .wrap .sport_btn{ display: block; width: 100%; height: 60px; background-color: #f19c49; color: #fff; font-size: 18px; line-height: 60px; }
+
+
+/* hover effect */
+#sub_contents .wrap .list a:hover img{ transform: scale(1.1,1.1); }
+
+/* sub_move */
+#sub_move{ width: 1180px; margin: 0 auto; }
+#sub_move ul{ width: 100%; height: 95px; margin: 50px 0; padding: 19px 25px; box-sizing: border-box; }
+#sub_move ul li{ height: 100%; }
+#sub_move ul li a{ display: block; height: 100%; background-repeat: no-repeat; box-sizing: border-box; }
+#sub_move .first{ float: left; }
+#sub_move .first a{ padding-left: 50px; background-image: url(../images/sub/sub_move_prev_icon.png); background-position: left center; }
+#sub_move .last{ float: right; text-align: right; }
+#sub_move .last a{ padding-right: 50px; background-image: url(../images/sub/sub_move_next_icon.png); background-position: right center; }
+#sub_move p.direction{ color: #666; font-family: 'S-CoreDream-3Light', '맑은 고딕', sans-serif; font-size: 16px; }
+#sub_move p.page{ font-family: 'S-CoreDream-5Medium', '맑은 고딕', sans-serif; font-size: 24px; }
+
+header.active + #main_img{ margin-top: 60px; }
+
+/* btn_wrap */
+.btn_wrap{ width: 1180px; margin: 0 auto; text-align: center; }
+.btn_wrap .write_btn{ display: block; width: 80px; height: 40px; margin-left: auto; margin-right: 0; background-color: #f19c49; color: #fff; line-height: 40px; }
