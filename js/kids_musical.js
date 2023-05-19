@@ -7,7 +7,6 @@ $(document).ready(function(){
             
             function data_print(){
                 if(use_date.length > 0){
-                    console.log(use_date.length);
                     $('#sub_contents .wrap').append('<p class="count">현재 예매 가능한 공연은 총 <span class="highlight">' + String(use_date.length) + '개</span> 입니다</p>');
                     var ul = $('<ul class="list"/>');
                     for(var i in use_date){
